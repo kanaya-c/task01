@@ -1,0 +1,498 @@
+@charset "utf-8";
+
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+/* ここまでがリセットcss */
+
+/* body */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* ヘッダー */
+header {
+  background-color: black;
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.header-logo {
+  color: white;
+  float: left;
+  margin-left: 50px;
+  line-height: 80px;
+}
+
+
+.nav ul {
+  display: flex;
+  float: right;
+  list-style-type: none;
+}
+
+.nav li {
+  line-height: 80px;
+  margin-right: 50px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+}
+
+/* メインビジュアル */
+#main-visual {
+  background-image: url(../img/eyecatch.jpg);
+  width: 100%;
+  height: 700px;
+  margin-top: 80px;
+  position: relative;
+  color: white;
+}
+
+.catch-copy h2{
+  position: absolute;
+  top: 60%;
+  left: 5%;
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.visual-date {
+  position: absolute;
+  width: 580px;
+  height: 55px;
+  bottom: 0;
+  right: 10%;
+  background-color: white;
+}
+
+.visual-date p,small {
+  color: black;
+}
+
+.visual-date p {
+  padding:10px 0 0 20px;
+}
+
+.news {
+  position: absolute;
+  bottom: 0;
+  right: 0%;
+  padding: 20px;
+  width: 100px;
+  background-color: black;
+}
+
+.news p {
+  text-align: center;
+}
+
+/* 企業概要 */
+#company-overview {
+  background-color: black;
+  width: 100%;
+  height: 600px;
+  position: relative;
+}
+
+#company-overview img {
+  position: absolute;
+  width: 590px;
+  height: 390px;
+  top: 20%;
+  right: 10%;
+  z-index: 20;
+}
+
+.overview-black {
+  background-color: black;
+  height: 450px;
+  width: 100%;
+  position: absolute;
+}
+
+.overview-black h3,p {
+  color: white;
+}
+
+.overview-black a {
+  text-decoration: none;
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+  padding: 10px;
+  position: absolute;
+  top: 60%;
+  left: 10%;
+}
+
+.overview-black h3 {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  font-size: 25px;
+}
+
+.overview-black p {
+  position: absolute;
+  top: 40%;
+  left:10% ;
+  z-index: 30;
+  line-height: 1.5em;
+}
+
+.overview-white {
+  width: 100%;
+  height: 150px;
+  background-color: white;
+  transform: translateY(450px);
+  z-index: 10;
+}
+
+/* 事業紹介 */
+#service {
+  background-color: gainsboro;
+  width: 100%;
+  height: 1380px;
+}
+
+#service h4 {
+  text-align: center;
+  padding: 10px 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.service-image img{
+  width: 720px;
+  height: 500px;
+}
+
+.service-introduction {
+  width: 580px;
+  height: 290px;
+  background-color: white;
+  padding: 50px; 
+}
+
+.service-introduction p,a {
+  color: black;
+}
+
+.service-introduction p {
+  margin-bottom: 20px;
+}
+
+.service-introduction .strong-p {
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+.service-introduction a{
+  text-decoration: none;
+  border: 1px solid black;
+  display: block;
+  width: 120px;
+  padding: 15px;
+  margin-left: 75%;
+  text-align: center;
+}
+
+.service-right,.service-left{
+  width: 100%;
+  height: 670px;
+  position: relative;
+}
+
+.service-right .service-image {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  z-index: 10;
+}
+
+.service-right .service-introduction {
+  position: absolute;
+  top: 10%;
+  right: 40%;
+  z-index: 20;
+}
+
+.service-left .service-image {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
+.service-left .service-introduction {
+  position: absolute;
+  top: 10%;
+  left: 40%;
+  z-index: 20;
+}
+
+/* 企業情報 */
+#company {
+  width: 100%;
+  height: 780px;
+}
+
+.companys img{
+  width: 690px;
+  height: 230px;
+  position: relative;
+}
+
+.companys {
+  position: relative;
+  color: white;
+  height: 350px;
+  margin: 120px 0 150px;
+}
+
+.company-right {
+  position: absolute;
+  right: 0;
+}
+
+.company-left {
+  position: absolute;
+  left: 0;
+}
+
+
+.company-left span {
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  font-size: 25px;
+} 
+
+.company-left p {
+  position: absolute;
+  top: 55%;
+  left: 45%;
+  font-size: 15px;
+  padding: 10px;
+}
+
+.company-right span {
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  font-size: 25px;
+}
+
+.company-right p{
+  position: absolute;
+  top: 55%;
+  left: 45%;
+  font-size: 15px;
+  padding: 10px;
+}
+
+.questions {
+  width: 1100px;
+  height: 130px;
+  margin: 0 auto;
+  padding: 0 20px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  margin-top: 20px 0;
+}
+
+.questions .question{
+  color: white;
+  text-align: center;
+  margin-left: 40%;
+}
+
+.questions .faq {
+  font-size: 2.5em;
+  text-align: left;
+}
+
+/* お問い合わせ */
+#contact {
+  background-image: url(../img/contact-bg.jpg);
+  background-size: 1440px 520px;
+  width: 100%;
+  height: 520px;
+}
+
+.contact-message {
+  text-align: center;
+  padding-top: 10%;
+  line-height: 1.5em;
+}
+
+.contact-message h4 {
+  color: white;
+  font-size: 20px;
+  padding: 20px 0;
+}
+
+.contact-message .big-message {
+  font-size: 30px;
+  padding: 20px 0;
+}
+
+.contact-message .small-message {
+  font-size: 13px;
+  margin: 10px 0;
+}
+
+.contact-message a{
+  color: white;
+  text-decoration: none;
+  border: 1px solid white;
+  display: inline-block;
+  width: 150px;
+  padding: 10px;
+  margin: 15px 0;
+}
+
+/*　フッター */
+footer{
+  width: 100%;
+  height: 75px;
+  background-color: black;
+  color: white;
+}
+
+.footer-logo {
+  float: left; 
+  line-height: 75px;
+  margin-left: 50px;
+  font-weight: bold;
+}
+
+.footer-nav ul{
+  display: flex;
+  float: right;
+  list-style-type: none;
+}
+
+.footer-nav li {
+  line-height: 75px;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+.footer-copy {
+  position: relative;
+}
+
+.footer-copy p {
+  position: absolute;
+  top: 50%;
+  left: 38%;
+  transform: translateY(55px);
+}
